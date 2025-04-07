@@ -23,7 +23,7 @@
         <nav class="page-nav">
           <a class="page-logo" href="./index.html">
             <span class="text-italic"> SIMPLY </span>&nbsp;CHOCOLATE
-            <svg class="page-logo-icon" width="24" height="24">
+            <svg class="page-logo-icon" >
               <use href="./images/sprite.svg#icon-chocolate"></use>
             </svg>
           </a>
@@ -39,6 +39,12 @@
             </li>
           </ul>
         </nav>
+<button class="mobile-open-btn" type="button">
+  <svg class="mobile-open-btn-icon" width="28" height="28">
+    <use href="./images/sprite.svg#icon-menu"></use> 
+   </svg>
+</button>
+
         <ul class="social-list">
           <li class="social-list-item">
             <a href="" class="social-list-link">
@@ -66,8 +72,12 @@
             of pure delight!
           </h1>
           <div class="hero-content-wrapper">
-            <button class="hero-button" type="button">Buy now</button>
-            <a class="how-made-link" href="#how-made">How it`s made</a>
+            <div class="hero-btn-block">
+              <button class="hero-button" type="button">Buy now</button>
+              <a class="how-made-link" href="#how-made">How it`s made</a>
+                   
+            </div>
+            
 
             <a class="scroll-down-link" href="#benefits"
               >scroll down
@@ -81,7 +91,7 @@
         </div>
       </section>
       <!-------------------- BENEFITS -->
-      <section id="benefits" class="benefits benefits-paddings">
+      <!-- <section id="benefits" class="benefits benefits-paddings">
         <div class="container">
           <h2 class="visually-hidden">BENEFITS</h2>
           <ul class="benefits-list">
@@ -130,9 +140,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-------------------- Ingredients -->
-      <section class="ingredients section-paddings">
+      <!-- <section class="ingredients section-paddings">
         <div class="container">
           <div class="ingredients-title">
             <h2 class="section-title">
@@ -286,9 +296,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-------------------- How it's made -->
-      <section id="how-made" class="made section-paddings">
+      <!-- <section id="how-made" class="made section-paddings">
         <div class="container made-conteiner">
           <h2 class="section-title title-paddings">
             HOW IT`S <span class="text-color"> MADE?</span>
@@ -341,9 +351,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-------------------- Reviews -->
-      <section id="review" class="review section-paddings">
+      <!-- <section id="review" class="review section-paddings">
         <div class="container">
           <h2 class="section-title title-paddings">
             <span class="text-color">CHOCOLATE</span> IS LOVED
@@ -396,10 +406,10 @@
           </ul>
           <button class="review-button" type="button">Leave a review</button>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-------------------- Footer -->
-    <footer class="footer-page">
+    <!-- <footer class="footer-page">
       <div class="container footer-container">
         <div class="footer-box">
           <h2 class="footer-title">
@@ -439,9 +449,9 @@
           </ul>
         </nav>
       </div>
-    </footer>
+    </footer> -->
     <!-------------------- Back drop -->
-    <div class="backdrop is-open">
+    <!-- <div class="backdrop ">
       <div class="modal">
         <button class="modal-close-btn" type="button"        >
       <svg class="modal-close-btn-icon" width="28" height="28">
@@ -529,6 +539,48 @@ I accept the terms and conditions of the
 <button class="review-form-submit" type="submit">Send</button>
       </form>
       </div>
+    </div> -->
+  
+  <!-- ---------------Mobile-menu -->
+
+  <div class="mobile-menu ">
+    <div class="container mobile-menu-container">
+      <button class="mobile-close-btn" type="button">
+        <svg class="mobile-close-btn-icon" width="28" height="28">
+          <use href="./images/sprite.svg#icon-close"></use> 
+         </svg>
+      </button>
+  <nav class="mobile-menu-nav">
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a href="./index.html" class="mobile-menu-link">Home</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#how-made" class="mobile-menu-link">How it`s made?</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#review" class="mobile-menu-link">Chocolate is loved</a>
+      </li>
+    </ul>
+      </nav> 
+  <ul class="mobile-menu-social-list">
+      <li class="mobile-menu-social-list-item">
+        <a href="" class="mobile-menu-social-list-link">
+          <svg class="mobile-menu-social-list-icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-menu-social-list-item">
+        <a href="" class="mobile-menu-social-list-link">
+          <svg class="mobile-menu-social-list-icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul> 
     </div>
+  </div>
+  
   </body>
-</html>
+</html> 
