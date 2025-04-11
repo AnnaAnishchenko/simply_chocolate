@@ -231,18 +231,18 @@ body {
   fill: #ffffff;
 } */
 /*  -------------------- BENEFITS -- */
-.benefits {
+/* .benefits {
   max-width: 1200px;
   height: 344px;
   margin-left: auto;
   margin-right: auto;
   background: #1e1823;
-}
-.benefits-paddings {
+} */
+/* .benefits-paddings {
   padding-bottom: 50px;
   margin-top: 72px;
   margin-bottom: 50px;
-}
+} */
 
 .benefits-list {
   display: flex;
@@ -280,18 +280,18 @@ body {
   margin-bottom: 22px;
 }
 
-.benefits-name {
+/* .benefits-name {
   font-weight: 600;
   font-size: 18px;
   color: #ffffff;
   padding-bottom: 18px;
-}
-.benefits-description {
+} */
+/* .benefits-description {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
-}
+} */
 
 /*  -------------------- Ingredients --*/
 .ingredients {

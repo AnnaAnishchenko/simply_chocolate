@@ -454,3 +454,115 @@ height: 45px;
       background-image: url('../images/hero/hero-desktop@2x.jpg') ;
     }
   }
+
+    /* ========BENEFITS */
+  /* ===mobile */
+  .benefits {
+    max-width: 375px;
+    height: 792px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #1e1823;
+  }
+  .benefits-paddings {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+    .benefits-item{
+      width: 308px;
+      min-height: 224px ;
+      padding-top: 20px;
+      margin-right: 28px;
+    }
+
+    .benefits-item-icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 365px;
+      width: 62px;
+      height: 62px;
+      margin-bottom: 22px;
+    }
+
+.benefits-item-text{
+  min-height: 141px;
+  padding-right: 28px;
+}
+  .benefits-name {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    padding-bottom: 18px;
+    min-height: 22px;
+  }
+  .benefits-description {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+    
+  }
+
+  /* ===tablet */
+  @media screen and (min-width:768px) {
+    .benefits {
+      max-width: 768px;
+      height: 620px;
+      }
+      .benefits-paddings {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .benefits-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 32px;
+        min-width: 704px;
+        row-gap: 32px;
+        gap: 28px;
+      }
+      .benefits-item-text{
+        padding-right: 0;
+      }
+  }
+
+  /* ===desktop */
+  @media screen and (min-width:1168px) {
+    .benefits {
+      max-width: 1200px;
+      height: 344px;
+      }
+      .benefits-paddings {
+        margin-top: 72px;
+        margin-bottom: 50px;
+      }
+      .benefits-list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 18px;
+        padding-right: 18px;
+        max-width: 1100px;
+      }
+      .benefits-item {
+        position: relative;
+        width: calc((100% - 2 * 88px) / 3);
+      }
+      
+      .benefits-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -18px;
+        height: 50%;
+        width: 1px;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+  }
