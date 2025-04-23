@@ -413,50 +413,50 @@ body {
   letter-spacing: -0.02em;
 } */
 /*  -------------------- How it's made --*/
-.made {
+  .made {
 }
-.made-conteiner {
+/* .made-conteiner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.made-information {
+} */
+/* .made-information {
   display: flex;
   column-gap: 20px;
   justify-content: center;
-}
-.made-image {
+} */
+/* .made-image {
 }
 .how-made-decription {
   padding: 32px;
-}
-.made-name {
+} */
+/* .made-name {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   margin-bottom: 28px;
   max-width: 350px;
-}
-.made-list {
+} */
+/* .made-list {
   display: flex;
   flex-direction: column;
   max-width: 452px;
   gap: 24px;
-}
-.made-item {
+} */
+/* .made-item {
   display: flex;
   align-items: stretch;
-}
+} */
 .made-item svg {
   margin-right: 8px;
 }
 
-.made-description {
+/* .made-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
-}
+} */
 /*  -------------------- Reviews --*/
 .review {
 }

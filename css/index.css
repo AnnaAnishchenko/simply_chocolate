@@ -60,7 +60,7 @@ body {
 }
 .section-paddings {
   padding-top: 30px;
-  padding-bottom: 30%;
+  padding-bottom: 30px;
 }
 .section-title {
   font-weight: 600;
@@ -680,9 +680,6 @@ height: 45px;
     transform: translateY(100%);
     transition: transform 250ms linear;
   }
-
-
-
   .ingredients-item:hover .ingredients-overlay {
     display: block;
     transform: translateY(0);
@@ -747,15 +744,10 @@ height: 45px;
   .ingredients-item {
     max-width: 336px;
   }
-
-
   .ingredients-overlay { 
     padding: 20px;
   }
 }
-
-
-
   /* ===desktop */
   @media screen and (min-width:1168px) {
     .ingredients-img {
@@ -771,3 +763,121 @@ height: 45px;
       max-width: calc((100% - (19 * 3) px) / 4);
   }
 }
+
+
+/*  ======== How it's made --*/
+  /* ===mobile */
+  .made-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .made-information {
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+    justify-content: center;
+  }
+  .made-image {
+    background-image: url('../images/how-its-made/made-mobile.jpg');
+  width: 335px;
+  height: 600px;
+    }
+  .how-made-decription {
+    padding: 20px 14px;
+  }
+  .made-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 20px;
+    max-width: 350px;
+  }
+  .made-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 307px;
+          gap: 18px;
+  }
+  .made-item {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+
+    position: relative;
+    padding-left: 16px;
+  }
+  .made-item::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4c4c4c;
+    border: 1px solid #eceded;
+  }
+
+
+
+
+ 
+
+
+  @media screen and (max-width:767px) and (min-resolution:192dpi) {
+    .made-image {
+      background-image: url('../images/how-its-made/made-mobile@2x.jpg');
+    }
+  }
+
+/* ===tablet */
+@media screen and (min-width:768px) {
+  .made-image {
+    background-image: url('../images/how-its-made/made-tablet.jpg');
+  width: 614px;
+  height: 400px;
+  }
+  .how-made-item {
+    padding: 32px;
+  }
+  .made-list {
+    max-width: 550px;
+       }
+
+
+}
+
+@media screen and (min-width:768px) and (min-resolution:192dpi) {
+  .made-image {
+    background-image: url('../images/how-its-made/made-tablet@2x.jpg');
+  }
+}
+
+
+  /* ===desktop */
+  @media screen and (min-width:1168px) {
+
+    .made-image {
+      background-image: url('../images/how-its-made/made-desktop.jpg');
+    width: 600px;
+    }
+    .made-list {
+     max-width: 452px;
+      gap: 24px;
+    }
+    .made-name {
+     margin-bottom: 28px;
+      max-width: 350px;
+    }
+
+  }
+  @media screen and (min-width:1168px) and (min-resolution:192dpi) {
+    .made-image {
+      background-image: url('../images/how-its-made/made-desktop@2x.jpg');
+    }
+  }
