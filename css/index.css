@@ -782,9 +782,10 @@ height: 45px;
     background-image: url('../images/how-its-made/made-mobile.jpg');
   width: 335px;
   height: 600px;
+  background-size: cover;
     }
   .how-made-decription {
-    padding: 20px 14px;
+    padding: 20px 14px;  
   }
   .made-name {
     font-weight: 600;
@@ -797,17 +798,15 @@ height: 45px;
     display: flex;
     flex-direction: column;
     max-width: 307px;
-          gap: 18px;
+    gap: 18px;
   }
   .made-item {
     display: flex;
     align-items: center; 
-    gap: 8px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-
     position: relative;
     padding-left: 16px;
   }
@@ -824,11 +823,6 @@ height: 45px;
   }
 
 
-
-
- 
-
-
   @media screen and (max-width:767px) and (min-resolution:192dpi) {
     .made-image {
       background-image: url('../images/how-its-made/made-mobile@2x.jpg');
@@ -837,19 +831,27 @@ height: 45px;
 
 /* ===tablet */
 @media screen and (min-width:768px) {
+  .made-conteiner {
+    align-items: center;
+  }
+  
   .made-image {
     background-image: url('../images/how-its-made/made-tablet.jpg');
   width: 614px;
   height: 400px;
   }
-  .how-made-item {
+  .how-made-decription {
     padding: 32px;
-  }
+}
+.made-name{
+  margin-bottom: 28px;
+}
   .made-list {
     max-width: 550px;
-       }
-
-
+  }
+  .made-item{
+    max-width: 480px;
+  }
 }
 
 @media screen and (min-width:768px) and (min-resolution:192dpi) {
@@ -861,7 +863,12 @@ height: 45px;
 
   /* ===desktop */
   @media screen and (min-width:1168px) {
-
+    .made-information {
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+      justify-content: center;
+    }
     .made-image {
       background-image: url('../images/how-its-made/made-desktop.jpg');
     width: 600px;
