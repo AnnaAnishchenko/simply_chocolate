@@ -888,3 +888,263 @@ height: 45px;
       background-image: url('../images/how-its-made/made-desktop@2x.jpg');
     }
   }
+
+
+
+/*  ======== Reviews --*/
+  /* ===mobile */
+ 
+.review-list {
+  display: flex;
+  overflow-x: auto; 
+  margin: 0;
+  list-style: none; 
+  gap: 20px;
+  padding-top: 40px;
+  scroll-snap-type: x mandatory;
+  
+  
+}
+
+.review-item {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  height: 200px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  padding-left: 18px;
+  padding-right: 18px;
+   flex: 0 0 100%;
+  scroll-snap-align: start; 
+  }
+
+.review-item-wrapper{
+    position: relative; 
+}
+
+.review-image {
+  position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.review-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  padding-bottom: 24px;
+  padding-top: 60px;
+}
+.review-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+  padding-left: 18px;
+  padding-right: 18px;
+
+}
+
+.review-button {
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 222px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.review-button:hover,
+.review-button:focus {
+  background: #fd9222;
+  color: #ffffff;
+} 
+
+/* ===tablet */
+@media screen and (min-width:768px) {
+  .review-item {
+    flex: 0 0 calc(50% - 16px);
+  }
+  .review-button {
+    margin-top: 50px;
+  }
+}
+  
+
+/* ===desktop */
+  @media screen and (min-width:1168px) {
+    .review-item {
+      flex: calc((100% - 56px) / 3);
+      height: 200px;
+  }
+ 
+  }
+
+/*  ======== Footer --*/
+  /* ===mobile */
+  .footer-page {
+    width: 375px;
+    height: 517px;
+    background: #1e1823;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .footer-container {
+    padding-top: 32px;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    max-width: 300px;
+  }
+  .footer-adress {
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .adress-list{
+    display: flex;
+        gap: 4px;
+        flex-direction: column;
+        align-items: flex-start;
+
+  }
+  
+  .adress-name {
+    font-weight: 500;
+    padding-bottom: 14px;
+  }
+ 
+  .adress-link {
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+  
+  .adress-link:hover,
+  .adress-link:focus {
+    color: #fd9222;
+  }
+ 
+.footer-nav{
+  min-width: 120px;
+  height: 152px;
+  margin-top: 64px;
+}
+    .footer-list {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+  }
+ 
+  .footer-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+  }
+  .footer-link:hover,
+  .footer-link:focus {
+    color: #fd9222;
+  }
+
+.footer-btn{
+  display: flex;
+  gap: 8px;
+  width: 335px;
+height: 45px;
+padding: 32px 0;
+}
+.footer-form-input{
+  border: 1.50px solid rgba(255, 255, 255, 0.15);
+border-radius: 30px;
+padding: 14px 18px;
+width: 207px;
+height: 45px;
+font-weight: 400;
+font-size: 14px;
+letter-spacing: -0.02em;
+color: rgba(255, 255, 255, 0.3);
+background-color: inherit;
+}
+
+  .footer-button{
+    border-radius: 100px;
+    padding: 14px 26px;
+    min-width: 120px;
+    height: 45px;
+    background: #fd9222;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    margin-right: 14px;
+    border: none;
+  }
+  .footer-button:hover,
+  .footer-button:focus {
+    background: #fcf1e0;
+    color: #fd9222;
+  } 
+
+
+
+
+
+
+
+
+
+/* ===tablet */
+@media screen and (min-width:768px) {
+  .footer-page {
+    width: 768px;
+    height: 291px;
+    margin-top: 40px;
+  }
+  .footer-item-hiden{
+    
+  }
+  
+}
+
+  /* ===desktop */
+  @media screen and (min-width:1168px) {
+
+    .footer-page {
+      width: 1200px;
+      height: 298px;
+      margin-top: 50px;
+    }
+    .footer-container {
+      padding-top: 50px;
+    }
+
+
+    .footer-title {
+      font-size: 28px;
+      line-height: 1.21;
+     
+    }
+  }

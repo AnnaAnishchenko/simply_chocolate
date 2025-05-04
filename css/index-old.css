@@ -460,7 +460,7 @@ body {
 /*  -------------------- Reviews --*/
 .review {
 }
-
+/* 
 .review-list {
   display: flex;
   justify-content: space-between;
@@ -506,7 +506,7 @@ body {
 .review-button:focus {
   background: #fd9222;
   color: #ffffff;
-}
+} */
 /*  -------------------- Footer --*/
 .footer-page {
   width: 1200px;
