@@ -413,8 +413,7 @@ body {
   letter-spacing: -0.02em;
 } */
 /*  -------------------- How it's made --*/
-  .made {
-}
+
 /* .made-conteiner {
   display: flex;
   flex-direction: column;
@@ -458,8 +457,7 @@ body {
   letter-spacing: -0.02em;
 } */
 /*  -------------------- Reviews --*/
-.review {
-}
+
 /* 
 .review-list {
   display: flex;
@@ -523,6 +521,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.footer-box::after {
+  content: '';
+  width: 335px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+display: block;
+margin: 32px auto;
+}
+
 .footer-title {
   font-weight: 500;
   font-size: 28px;
@@ -557,15 +563,13 @@ body {
 .adress-link:focus {
   color: #fd9222;
 }
-.footer-nav {
-}
+
 .footer-list {
   margin-top: 74px;
   display: flex;
   column-gap: 24px;
 }
-.footer-item {
-}
+
 .footer-link {
   font-weight: 500;
   font-size: 14px;
