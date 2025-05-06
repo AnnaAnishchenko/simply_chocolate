@@ -848,6 +848,9 @@ body {
     height: 270px;
     max-width: calc((100% - (19 * 3) px) / 4);
   }
+    .ingredients-overlay {
+      padding: 20px;
+    }
 }
 
 
@@ -871,7 +874,25 @@ body {
   width: 335px;
   height: 600px;
   background-size: cover;
+
+position: relative;
+background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
 }
+.made-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none;
+  fill: #ffffff;
+}
+
 
 .how-made-decription {
   padding: 20px 14px;
@@ -933,7 +954,9 @@ body {
     width: 614px;
     height: 400px;
   }
-
+.made-icon{
+  display: none;
+}
   .how-made-description {
     padding: 32px;
   }
@@ -1060,8 +1083,6 @@ body {
 
 
 
-
-
 /* Індикатори */
 .review-dots {
   display: flex;
@@ -1080,9 +1101,8 @@ body {
 
 .dot.active {
   background-color: #fd9222;
-  width: 29px;
+  width: 28px;
     height: 13px;
-      border-radius: 50%;
 }
 
 
